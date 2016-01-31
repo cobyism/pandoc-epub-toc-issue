@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+echo "Removing epub files"
+
+rm *.epub
+
+echo "Generating example 1"
+
+pandoc -o output-1.epub working/*.md --toc
+
+echo "Generating example 2"
+
+pandoc -o output-2.epub broken/*.md --toc
